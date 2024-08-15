@@ -114,9 +114,11 @@ import "maplibre-gl/dist/maplibre-gl.css";
 
 const App = () => {
   const [viewState, setViewState] = useState({
-    longitude: 0,
-    latitude: 0,
-    zoom: 1,
+    longitude: 78.9629, // Longitude for the center of India
+    latitude: 20.5937, // Latitude for the center of India
+    zoom: 4, // Zoom level (adjust as needed)
+    pitch: 0,
+    bearing: 0,
   });
   const [accessToken, setAccessToken] = useState(null);
   const [data, setData] = useState(null);
